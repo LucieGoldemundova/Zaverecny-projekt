@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Závěrečný projekt</title>
+
+  <!-- napojení stylů css -->
+	<link rel="stylesheet" href="/css/style.css">
+
+  <!-- napojení google fontů -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- napojení javascriptové knihovny pro baner -->
+  <link rel="stylesheet" href="/css/glide.core.min.css">
+  <link rel="stylesheet" href="/css/glide.theme.min.css">
+</head>
+
+<body>
+
+  <header class="header">
+
+	<nav class="menu">
+     
+        <img class="menu__logo" src="/images/logo.png" alt="">
+
+		      <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
+		      <label for="menu-checkbox" class="menu__toggler">☰</label>
+       
+      
+		    <ul class="menu__list">
+			    <li class="menu__item"><a class="menu__link" href="/">Úvod</a></li>
+			    <li class="menu__item"><a class="menu__link" href="/vim-kam-jedu/">Vím kam jedu</a></li>
+			    <li class="menu__item"><a class="menu__link" href="#">Tipy na výlety</a></li>
+			    <li class="menu__item"><a class="menu__link" href="#">Ubytování</a></li>
+			    <li class="menu__item"><a class="menu__link" href="#">Mám dotaz</a></li>
+		    </ul>
+
+	</nav>
+
+</header>
+
+<!-- Tady končí první část mojí šablony -->
+  {{ content | safe }}
+<!-- Pokračování šablony, nutné vyjmout script.js, baner je jen na úvodní stránce -->
+
+<footer>&copy 2021 Můj skvělý závěrečný projekt v kurzu Staň se kodérkou.</footer>
+
+</body>
+</html>

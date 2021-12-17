@@ -1,42 +1,7 @@
-<!DOCTYPE html>
-<html lang="cs">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Závěrečný projekt</title>
-  <!-- napojení stylů css -->
-	<link rel="stylesheet" href="css/style.css">
-  <!-- napojení google fontů -->
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,400;1,700&display=swap" rel="stylesheet">
-  <!-- napojení javascriptové knihovny pro baner -->
-  <link rel="stylesheet" href="css/glide.core.min.css">
-  <link rel="stylesheet" href="css/glide.theme.min.css">
-</head>
-<body>
-
-  <header class="header">
-
-	<nav class="menu">
-     
-        <img class="menu__logo" src="images/logo.png" alt="">
-
-		      <input type="checkbox" class="menu__checkbox" id="menu-checkbox">
-		      <label for="menu-checkbox" class="menu__toggler">☰</label>
-       
-      
-		    <ul class="menu__list">
-			    <li class="menu__item"><a class="menu__link" href="#">Úvod</a></li>
-			    <li class="menu__item"><a class="menu__link" href="#">Vím kam jedu</a></li>
-			    <li class="menu__item"><a class="menu__link" href="#">Tipy na výlety</a></li>
-			    <li class="menu__item"><a class="menu__link" href="#">Ubytování</a></li>
-			    <li class="menu__item"><a class="menu__link" href="#">Mám dotaz</a></li>
-		    </ul>
-
-	</nav>
-
-</header>
-
-<!-- Tady bude končí první část mojí šablony -->
+---
+layout: uvodni-sablona.njk
+title: Dovolená na Slovinsku
+---
 
 <section class="baner">
 
@@ -44,9 +9,9 @@
     <div class="glide__track" data-glide-el="track">
       
       <ul class="glide__slides">
-        <li class="glide__slide"><img src="images/slovinsko1.JPG" alt="Foto 1"></li>
-        <li class="glide__slide"><img src="images/slovinsko2.JPG" alt="Foto 2"></li>
-        <li class="glide__slide"><img src="images/slovinsko3.JPG" alt="Foto 3"></li>
+        <li class="glide__slide"><img src="/images/slovinsko1.JPG" alt="Foto 1"></li>
+        <li class="glide__slide"><img src="/images/slovinsko2.JPG" alt="Foto 2"></li>
+        <li class="glide__slide"><img src="/images/slovinsko3.JPG" alt="Foto 3"></li>
       </ul>
     </div>
 
@@ -70,69 +35,62 @@
 
   </section>
 
-  <section class="duvody">
+  <section class="article">
 
-    <h2 class="duvody__heading">Devět důvodů, proč navštívít Slovinsko</h2>
+    <h2 class="second__heading">Devět důvodů, proč navštívít Slovinsko</h2>
 
-    <div class="duvody__content">
+    <div class="article__content">
 
-      <div class="duvody__flex">
-        <img class="duvody__img" src="images/landscape.png" alt="Ikona přírody">
+      <div class="article__flex">
+        <img class="article__img" src="/images/landscape.png" alt="Ikona přírody">
         <h3>Krásná příroda</h3>
       </div>
 
-      <div class="duvody__flex">
-        <img class="duvody__img" src="images/road.png" alt="Ikona silnice">
+      <div class="article__flex">
+        <img class="article__img" src="/images/road.png" alt="Ikona silnice">
         <h3>Rychlá cesta po dálnici</h3>
       </div>
 
-      <div class="duvody__flex">
-        <img class="duvody__img" src="images/mountain .png" alt="Ikona hor">
+      <div class="article__flex">
+        <img class="article__img" src="/images/mountain .png" alt="Ikona hor">
         <h3>Miluju hory</h3>
       </div>
 
-      <div class="duvody__flex">
-        <img class="duvody__img" src="images/camping.png" alt="Ikona kempu">
+      <div class="article__flex">
+        <img class="article__img" src="/images/camping.png" alt="Ikona kempu">
         <h3>Dobře vybavené kempy</h3>
       </div>
 
-      <div class="duvody__flex">
-        <img class="duvody__img" src="images/river.png" alt="Ikona horské řeky">
+      <div class="article__flex">
+        <img class="article__img" src="/images/river.png" alt="Ikona horské řeky">
         <h3>Divoké horské řeky</h3>
       </div>
 
-      <div class="duvody__flex">
-        <img class="duvody__img" src="images/people.png" alt="Přátelští lidé">
+      <div class="article__flex">
+        <img class="article__img" src="/images/people.png" alt="Přátelští lidé">
         <h3>Přátelští lidé</h3>
       </div>
 
-      <div class="duvody__flex">
-        <img class="duvody__img" src="images/paddle-board.png" alt="Ikona paddle-boardu">
+      <div class="article__flex">
+        <img class="article__img" src="/images/paddle-board.png" alt="Ikona paddle-boardu">
         <h3>Miluju paddleboard</h3>
       </div>
 
-      <div class="duvody__flex">
-        <img class="duvody__img" src="images/eng.png" alt="Ikona se zkratkou angličtiny">
+      <div class="article__flex">
+        <img class="article__img" src="/images/eng.png" alt="Ikona se zkratkou angličtiny">
         <h3>Domluvím se anglicky</h3>
       </div>
 
-      <div class="duvody__flex">
-        <img class="duvody__img" src="images/lake.png" alt="Ikona jezera">
+      <div class="article__flex">
+        <img class="article__img" src="/images/lake.png" alt="Ikona jezera">
         <h3>Průzračně čistá jezera</h3>
       </div>
 
     </div>
 
   </section>
-
-
-
 </main>
 
-<!-- Pokračování šablony, nutné vyjmout script.js, baner je jen na úvodní stránce -->
-
-<footer>&copy 2021 Můj skvělý závěrečný projekt v kurzu Staň se kodérkou.</footer>
- 
 <script src="glide.min.js"></script>
 
   <script>
@@ -141,6 +99,3 @@
       type: 'carousel'
     }).mount()
   </script>
-
-</body>
-</html>
