@@ -433,4 +433,9 @@ footer {
 .form__link--photo {
   width: 60px;
   padding: 30px 10px;
+}
+
+/*styl pro obrázky použíté na blogu v markdownu*/
+.clanek__image {
+  width: 100%;
 }/*# sourceMappingURL=style.css.map */

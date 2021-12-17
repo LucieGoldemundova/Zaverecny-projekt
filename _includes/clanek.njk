@@ -1,0 +1,29 @@
+---
+layout: uvodni-sablona.njk
+---
+
+<main class="main">
+
+  <article class="clanek">
+    <h1 class="clanek__title">{{ title }}</h1>
+
+    <p class="clanek__meta">Publikováno {{ page.date.toLocaleString('cs-CZ') }}</p>
+    <div class="clanek__content">
+  
+      <div class="clanek__text">
+  
+        <p class="clanek__perex"> {{ perex }} </p>
+
+          {{ content | safe }}
+       
+      </div>
+  
+      <img class="clanek__image" src="/images/{{ foto }}" alt="{{ alt }}">
+  
+    </div>
+  
+  </article>
+
+
+
+</main>
