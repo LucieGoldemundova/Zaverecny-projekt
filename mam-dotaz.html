@@ -1,0 +1,67 @@
+---
+layout: uvodni-sablona.njk
+title: Napište nám
+---
+
+<main class="main">
+
+  <section class="form">
+
+    <div class="form__content">
+      <h2 class="form__heading">Máte dotaz?</h2>
+
+      <p class="form__perex">Strýček Googlů neporadil? Napište nám, třeba víme víc než on :). Pod tímhle textem najdete email, kontakt na sítě a zrovínka vedle napravo kontaktní formulář.</p>
+
+      <a class="form__contact" href="mailto:napy@seznam.cz">poznej.slovinsko@gmail.cz</a>
+
+      <div class="form__link--container">
+        <a class="form__link" href="https://www.facebook.com/" target="blanket"><img class="form__link--photo" src="/images/facebook.png" alt="Odkaz na facebook"></a>
+        <a class="form__link" href="https://www.instagram.com/" target="blanket"><img class="form__link--photo" src="/images/instagram.png" alt="Odkaz na instagram"></a>
+        <a class="form__link" href="https://www.whatsapp.com/?lang=cs" target="blanket"><img class="form__link--photo" src="/images/whatsapp.png" alt="Odkaz na whatsApp"></a>
+      </div>
+    </div>
+
+    <div class="form__container">
+      <form action="http://formular.itgirls.cz" method="post"></form>
+
+      <div class="form__field">
+        <label for="jmeno">Jméno*</label>
+        <input type="text" name="jmeno" id="jmeno" required>
+      </div>
+
+      <div class="form__field">
+        <label for="prijmeni">Příjmení*</label>
+        <input type="text" name="prijmeni" id="prijmeni" required>
+      </div>
+
+      <div class="form__field">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" value="@" placeholder="email" required>
+      </div>
+
+      <div class="form__field">
+        <label for="poznamka">Poznámka</label>
+        <textarea name="poznamka" id="poznamka" cols="30" rows="10"></textarea>
+      </div>
+
+      <div class="form__field">
+        <label for="kam-radi-cestujete">Kam rádi cestujete?</label>
+        <select name="kam-radi-cestujete" id="kam-radi-cestujete">
+          <option value="jsem-doma">Jsem rád doma</option>
+          <option value="evropa">Po Evropě</option>
+          <option value="svetobeznik">Jsem světoběžník</option>
+        </select>
+      </div>
+
+      <div class="form__checkbox">
+        <input type="checkbox" name="souhlas" id="souhlas" value="ano">
+        <label for="souhlas">Souhlasím s podmínkami</label>
+      </div>
+
+      <button type="submit" class="form__button">Odeslat</button>
+
+    </div>
+  </section>
+
+
+</main>
